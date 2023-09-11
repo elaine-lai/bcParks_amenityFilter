@@ -448,10 +448,19 @@
     document.getElementById("main").style.marginRight = "0";
   });
 
-  // document.querySelector('#main').addEventListener("click", function (e) {
-  //   document.getElementById("mySidenav").style.width = "0";
-  //   document.getElementById("main").style.marginRight = "0";
-  // })
+  //shows nav bar + when clicking main, closes nav bar only in mobile
+  function onlyMobileWidth() {
+    console.log("function called")
+    var w = window.innerWidth
+    if(w < 960){
+      document.querySelector('#main').addEventListener("click", function (e) {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+      })
+    }
+  }
+  window.addEventListener("resize", onlyMobileWidth);
+
 </script>
 </body>
 
