@@ -19,9 +19,9 @@ app.get('/', (req, res) => {
 app.use(express.static('public'));
 
 
-app.get('/api/users', (req, res) => {
-  res.json(allParksFile)
-})
+// app.get('/api/users', (req, res) => {
+//   res.json(allParksFile)
+// })
 
 app.listen(5000, () => {
   console.log('Server is listening on port 5000')
