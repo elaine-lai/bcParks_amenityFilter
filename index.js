@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'))
 })
 
-//middleware so can access images and css 
+//middleware, tells express module that the public dir has all of the site assets (images/css)
 app.use(express.static('public')); //LOCAL USE
 // app.use(express.static(__dirname + "/public/")); //VERCEL USE
 
