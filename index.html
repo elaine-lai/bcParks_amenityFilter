@@ -1,11 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
+
+  <!-- multi select dropdown -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css">
+
+  <!-- personal css -->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+  <!--google icons-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!--jquery for chosen multiselect-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 </head>
-<body>
-  <h1>HELLO WORLD!!</h1>
+
+<body id="body" style="background-color: #f6f6f6">
+  <header>
+    <nav>
+      <div class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="/images/bcparkslogo.png" id="navLogo">
+        </a>
+        <div>
+          <!--full screen nav-->
+          <a href="" id="signIn" class="fullscreenNav hover-underline-animation">
+            <span class="material-symbols-outlined">account_circle</span>
+            Sign In
+          </a>
+          <a href="" id="systemTime" class="fullscreenNav hover-underline-animation">
+            <span class="material-symbols-outlined">schedule</span>System Time
+          </a>
+          <!-- mobile nav -->
+          <a href="" id="time" class="mobileNav">
+            <span class="material-symbols-outlined">schedule</span> Time
+          </a>
+
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <a href="" class="fullscreenNav hover-underline-animation">
+            Cart
+          </a>
+          <span class="material-symbols-outlined open-button" id="hamburgerMenu">menu</span>
+        </div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <div class="sideNavHeader">
+          <a class="navbar-brand" href="#">
+            <img src="/images/mobile-logo.png">
+          </a>
+          <a href="javascript:void(0)" class="close-button">&times;</a>
+        </div>
+
+        <div class="sideNavHeaderATags">
+          <div class="eachNavHeader">
+            <span class="material-symbols-outlined">camping</span>
+            <a href="#">Reservations</a>
+          </div>
+          <div class="eachNavHeader">
+            <span class="material-symbols-outlined">person</span>
+            <a href="#">Sign In</a>
+          </div>
+          <div class="eachNavHeader">
+            <span class="material-symbols-outlined">help</span>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="eachNavHeader">
+            <span class="material-symbols-outlined">call</span>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <div id="reservationsFullScreen">
+      <div class="reservations">
+        <a href="#" class="fullscreenNav">
+          &nbsp; <span class="material-symbols-outlined ">camping</span>
+          Reservations &nbsp;
+        </a>
+      </div>
+    </div>
+
+    <!-- <div id="bannerSection">
+      <img class="discoverImg" src="/images/banner-image.jpg" alt="">
+    </div> -->
+  </header>
+
+  <main id="main">
+    <div class="centerAll">
+      <div class="searchSection">
+          <div class="tab">
+            <button class="arrowLeft" onclick="leftScroll()">
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+            <div class="scrollTabs">
+              <div class="tabsection" id="dOpen">
+                <img src="/images/campsite.png" alt="" id="campsite">
+                <button class="tablinks" id="defaultOpen">
+                  <!-- <button class="tablinks" onclick="openCity(event, 'Campsite')" id="defaultOpen"> -->
+
+                  <span id="tabTitle">Campsite</span></button>
+              </div>
+              <div class="tabsection">
+                <img src="/images/cabin.png" alt="" id="cabin">
+                <button class="tablinks">Cabin</button>
+              </div>
+              <div class="tabsection">
+                <img src="/images/group.png" alt="" id="group">
+                <button class="tablinks">Group</button>
+              </div>
+              <div class="tabsection">
+                <img src="/images/backcountry.png" alt="" id="backcountry">
+                <button class="tablinks"> Backcountry</button>
+              </div>
+              <div class="tabsection">
+                <img src="/images/canoe.png" alt="" id="canoe">
+                <button class="tablinks">Canoe Circuit</button>
+              </div>
+            </div>
+            <button class="arrowRight" onclick="rightScroll()">
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+          </div>
+
+          <div class="tabcontent">
+            <p>Select the amenities you'd like, and we'll find you a campsite!</p>
+
+            <!--Region-->
+            <div class ="region">
+              <label class="container">
+                <input type="checkbox" name="region" value ="Southern Interior" checked="checked">
+                <span class="checkmark"></span> Southern Interior
+              </label>
+              <label class="container">
+                <input type="checkbox" name="region" value ="Northern" checked="checked">
+                <span class="checkmark"></span> Northern
+              </label>
+              <label class="container">
+                <input type="checkbox" name="region" value ="Coastal Mainland" checked="checked">
+                <span class="checkmark"></span> Coastal Mainland
+              </label>
+              <label class="container">
+                <input type="checkbox" name="region" value ="Islands" checked="checked">
+                <span class="checkmark"></span> Islands
+              </label>
+            </div>
+
+            <!-- Amenities -->
+            <label for="">Amenities</label>
+            <br>
+            <div class="filterSection">
+              <select id="amenities" multiple class="livesearch">
+                <!--options go in here -->
+              </select>
+              <button onclick="clearAll()" id="removeAllX"><span id="Xstyle" class="material-symbols-outlined">
+                  close </span></button>
+            </div>
+            <div id="alertSection"></div>
+            <div class="searchButton">
+              <button id="searchButton" type="button" onclick="goSearch()"
+                class="btn btn-success btn-lg mat-focus-indicator"><span class="material-symbols-outlined"
+                  class="searchIcon">search</span> Search</button>
+            </div>
+          </div>
+
+          <div class="resultsSection" id="resultSection">
+            <span id="resultHeader"></span>
+            <div id="results"></div>
+          </div>
+
+      </div>
+
+      <!-- Discover -->
+      <div class="discoverSection">
+        <h2>Discover</h2>
+        <span class="underline">&#9644;&#9644;&#9644;&#9644;</span>
+        <div class="sectionContainer">
+          <div id="discover1">
+            <img class="discoverImg" src="/images/discover1.png" alt="">
+            <div class="discoverText">
+              <h2 class="discover">Severe Drought Conditions Across B.C.</h2>
+              <p class="discover">Given the severe drought conditions across B.C., park visitors are encouraged to
+                conserve water while using water facilities in BC Parks.</p>
+              <p class="discoverHyperlink hover-underline-animation">BC's response to drought conditions <span
+                  class="material-symbols-outlined moreInfoArrow">arrow_forward_ios</span> </p>
+            </div>
+          </div>
+          <div id="discover2">
+            <img class="discoverImg" src="/images/discover2.png" alt="">
+            <div class="discoverText">
+              <h2 class="discover">Park Advisories</h2>
+              <p class="discover">Check the park advisory centre to find details on fire bans, park closures and other
+                important information in BC Parks that could affect your visit.</p>
+              <p class="discoverHyperlink hover-underline-animation">Park advisories <span
+                  class="material-symbols-outlined moreInfoArrow">arrow_forward_ios</span> </p>
+            </div>
+          </div>
+          <div id="discover3">
+            <img class="discoverImg" src="/images/discover3.jpg" alt="">
+            <div class="discoverText">
+              <h2 class="discover">Visitor Satisfaction Survey</h2>
+              <p class="discover">Exploring BC Parks this summer? We want to hear from you. Take a moment to complete the
+                survey and help us improve our parks.</p>
+              <p class="discoverHyperlink hover-underline-animation">Take the Survey <span
+                  class="material-symbols-outlined moreInfoArrow">arrow_forward_ios</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Info -->
+      <div class="moreInfoSection">
+        <h2>More Info</h2>
+        <span class="underline">&#9644;&#9644;&#9644;&#9644;</span>
+
+        <div class="sectionContainer">
+          <div class="moreInfoText" id="moreInfo1">
+            <span class="material-symbols-outlined moreInfoTextChildL">info</span>
+            <p class="moreInfoTextChildR">Reservation information</p>
+          </div>
+          <div class="moreInfoText" id="moreInfo2">
+            <span class="material-symbols-outlined moreInfoTextChildL">help</span>
+            <p class="moreInfoTextChildR">Frequently asked questions</p>
+          </div>
+          <div class="moreInfoText" id="moreInfo3">
+            <span class="material-symbols-outlined moreInfoTextChildL">chat</span>
+            <p class="moreInfoTextChildR"> Contact us</p>
+          </div>
+        </div>
+      </div>
+  </div> <!--center-->
+  </main>
+
+  <nav class="sticky-bottom bottomNav">
+    <div class="navbar">
+      <img src="/images/bcparkslogo.png">
+    </div>
+  </nav>
+
+  <!--JQUERY (for multi select dropdown)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
 </body>
+
+<script>
+  //check which items are checked
+  var checkboxes = document.querySelectorAll("input[type=checkbox][name=region]");
+  
+  function getCheckedBoxes() {
+    // selecting all checkboxes
+    var checkboxes = document.querySelectorAll("input[type=checkbox][name=region]");
+    var values = [];
+    // looping through all checkboxes
+    // if checked property is true then push
+    for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].checked == true) {
+        values.push(checkboxes[i].value);
+      }
+    }
+    return values
+  }
+
+
+  //tab section
+  function leftScroll() {
+    const left = document.querySelector(".scrollTabs");
+    left.scrollBy(-200, 0);
+  }
+
+  function rightScroll() {
+    const right = document.querySelector(".scrollTabs");
+    right.scrollBy(200, 0);
+  }
+
+  //tab section
+  // function openCity(evt, cityName) {
+  //   var i, tabcontent, tablinks;
+  //   tabcontent = document.getElementsByClassName("tabContent");
+  //   for (i = 0; i < tabcontent.length; i++) {
+  //     tabcontent[i].style.display = "none";
+  //   }
+  //   tablinks = document.getElementsByClassName("tablinks");
+  //   for (i = 0; i < tablinks.length; i++) {
+  //     tablinks[i].className = tablinks[i].className.replace(" active", "");
+  //   }
+  //   document.getElementById(cityName).style.display = "block";
+  //   evt.currentTarget.className += " active";
+  // }
+
+  // Get the element with id="defaultOpen" and click on it
+  // document.getElementById("defaultOpen").click();
+
+  //clears all the selected amenities for a new search
+  function clearAll() {
+    $('#amenities').val('').trigger("chosen:updated");
+  }
+
+  //clears the results 
+  function clearPrevResults() {
+    document.getElementById("resultHeader").innerHTML = ""
+    document.getElementById("results").innerHTML = ""
+    document.getElementById("alertSection").innerHTML = ""
+  }
+
+  async function goSearch() {
+    var regionsSelected = getCheckedBoxes()
+    //initialize the elements to be used
+    let resultHeader = document.getElementById("resultHeader")
+    let resultHeaderText = document.createElement("h3")
+    let alertMsg = document.getElementById("alertSection")
+
+
+    //get whatever user selected in the selection area
+    var selectedValues = [];
+    $.each($("#amenities option:selected"), function () {
+      selectedValues.push($(this).val());
+    });
+    
+    //if nothing is selected when user clicks "search"
+    if (selectedValues.length === 0) {
+      // alert("Please enter a selection")
+      alertMsg.innerHTML = "Please select at least 1 amenity to filter by!"
+      alertMsg.style.color = "red"
+      alertMsg.style.fontSize = "13px"
+      return
+    }
+
+    let allTheData = await fetchBCParksData();
+    clearPrevResults()
+    resultHeaderText.innerHTML = "Results for: " + `${selectedValues}`
+    resultHeader.appendChild(resultHeaderText)
+
+    //filter by region
+    var filteredByRegion = []
+    for (let x of allTheData) {
+      if(regionsSelected.includes(x.area)){
+        filteredByRegion.push(x)
+      }
+    }
+
+    //compare to the list of data which campsites have the amenities
+    let resultSection = document.getElementById("results")
+    for (let x of filteredByRegion) {
+      const trimArray = x.amenities.map(element => {
+        return element.trim();
+      });
+      if (selectedValues.every(r => trimArray.includes(r))) {
+        let resultArea = document.createElement("p")
+        resultArea.innerHTML = `${x.area}` + " - " + `${x.campground}` + " - " + `${x.subcampground}`
+        resultSection.appendChild(resultArea)
+      }
+    }
+
+    if (resultSection.innerHTML === "") {
+      let resultArea = document.createElement("p")
+      resultArea.innerHTML = "No results found"
+      resultSection.appendChild(resultArea)
+    }
+
+    document.getElementById("resultSection").style.backgroundColor = "white";
+    document.getElementById("resultSection").style.marginTop = "20px"
+    document.getElementById("resultSection").style.padding = "30px 20px"
+    document.getElementById("resultSection").style.borderRadius = "5px"
+    document.getElementById("resultSection").style.textAlign = "left"
+  }
+
+  $.filterAndMultiSelect = function () {
+    $(document).ready(function () {
+      $('#amenities').chosen();
+    });
+  }
+
+  //get master list of all of the amenities without repeats
+  function removeDuplicateAmenities(listOfAmenities) {
+    // console.log(listOfAmenities)
+    var noDuplicateAmenities = new Set();
+    listOfAmenities.map(function (element) {
+      element.amenities.map(function (e) {
+        noDuplicateAmenities.add(e.trim())
+      })
+    })
+    return noDuplicateAmenities
+  }
+
+  function populateAmenityList(listOfAmenities) {
+    for (const amenity of listOfAmenities) {
+      const amenitySection = document.getElementById("amenities")
+      let eachAmenity = document.createElement('option')
+      eachAmenity.text = amenity.trim()
+      amenitySection.add(eachAmenity)
+    }
+  }
+
+  async function fetchBCParksData() {
+    //just like the fetch().then(res=> res.json())
+    try {
+      const response = await fetch(`/api/users`);
+      const exam = await response.json();
+      return exam;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async function renderBCParksData() {
+    let allTheData = await fetchBCParksData();
+    var megaAmenitiesList = removeDuplicateAmenities(allTheData)
+    populateAmenityList(megaAmenitiesList)
+    $.filterAndMultiSelect()
+  }
+  renderBCParksData()
+
+
+  //functions for the side nav bar
+  var openButton = document.querySelector(".open-button");
+  openButton.addEventListener("click", function () {
+    menuIsOpen = true;
+    document.getElementById("mySidenav").style.width = "400px";
+  });
+
+  var closeButton = document.querySelector(".close-button");
+
+  closeButton.addEventListener("click", function (e) {
+    menuIsOpen = false;
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+  });
+
+  // document.querySelector('#main').addEventListener("click", function (e) {
+  //   document.getElementById("mySidenav").style.width = "0";
+  //   document.getElementById("main").style.marginRight = "0";
+  // })
+</script>
+</body>
+
 </html>
