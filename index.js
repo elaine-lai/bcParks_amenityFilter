@@ -1,9 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-// import allParksFile from './public/data/allparks.json';
 
-// console.log(allParksFile)
 const app = express()
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,8 +13,8 @@ app.get('/', (req, res) => {
 })
 
 //middleware so can access images and css 
-// app.use(express.static('public')); //LOCAL USE
-app.use(express.static(__dirname + "/public/")); //VERCEL USE
+app.use(express.static('public')); //LOCAL USE
+// app.use(express.static(__dirname + "/public/")); //VERCEL USE
 
 
 app.get('/api/users', (req, res) => {
