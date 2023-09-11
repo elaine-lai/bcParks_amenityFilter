@@ -266,10 +266,10 @@ app.get('/api/users', (req, res) => {
       ]
     },
     {
-      area: 'Islands',
-      campground: ' Sasquatch ',
-      subcampground: ' Lakeside Campground ',
-      amenities: [
+      "area": 'Islands',
+      "campground": ' Sasquatch ',
+      "subcampground": ' Lakeside Campground ',
+      "amenities": [
         ' Entrance Kiosk ',
         ' Parking ',
         ' Restroom ',
