@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 })
 
 //middleware, tells express module that the public dir has all of the site assets (images/css)
-app.use(express.static('public')); //LOCAL USE
-// app.use(express.static(__dirname + "/public/")); //VERCEL USE
+// app.use(express.static('public')); //LOCAL USE
+app.use(express.static(__dirname + "/public/")); //VERCEL USE
 
 
 app.get('/api/users', (req, res) => {
