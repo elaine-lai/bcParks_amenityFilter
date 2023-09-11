@@ -1,0 +1,116 @@
+[
+  {
+    "area": "Islands",
+    "campground": "Bamberton",
+    "subcampground": "Sites 1-48",
+    "amenities": [ " Information ", " Restroom ", " Hiking ", " Water Tap " ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Elk Falls ",
+    "subcampground": "Campground",
+    "amenities": [
+      " Parking ",
+      " Day Use Area ",
+      " Information ",
+      " Playground ",
+      " Restroom ",
+      " Dump Station ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Fillongley ",
+    "subcampground": "Campground",
+    "amenities": [
+      " Hiking ",
+      " Information ",
+      " Parking ",
+      " Garbage ",
+      " Day Use Area ",
+      " Accessible ",
+      " Restroom ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Loveland Bay ",
+    "subcampground": "null",
+    "amenities": [
+      " Parking ",
+      " Information ",
+      " Boat Launch ",
+      " Beach ",
+      " Day Use Area ",
+      " Restroom ",
+      " Grey Water ",
+      " Water Tap ",
+      " Accessible "
+    ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Miracle Beach ",
+    "subcampground": " Sites 126-201, G1 ",
+    "amenities": [ " Parking ", " Hiking ", " Camping ", " Restroom " ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Morton Lake ",
+    "subcampground": "null",
+    "amenities": [
+      " Parking ",
+      " Boat Launch ",
+      " Information ",
+      " Hiking ",
+      " Beach ",
+      " Fishing ",
+      " Swimming ",
+      " Day Use Area ",
+      " Restroom ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Saysutshun (Newcastle Island Marine) ",
+    "subcampground": "Campground",
+    "amenities": [
+      " Park Office ",
+      " Swimming ",
+      " Beach ",
+      " Marina ",
+      " Day Use Area ",
+      " Information ",
+      " Restroom ",
+      " Restroom with Showers ",
+      " Firewood ",
+      " Concession ",
+      " Picnic Shelter ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Rathtrevor Beach ",
+    "subcampground": " Sites 175 - 226 ",
+    "amenities": [ " Hiking ", " Camping ", " Accessible " ]
+  },
+  {
+    "area": "Islands",
+    "campground": " Smelt Bay ",
+    "subcampground": "null",
+    "amenities": [
+      " Parking ",
+      " Beach ",
+      " Hiking ",
+      " Information ",
+      " Restroom ",
+      " Picnic Shelter ",
+      " Camping ",
+      " Water Tap "
+    ]
+  }
+]

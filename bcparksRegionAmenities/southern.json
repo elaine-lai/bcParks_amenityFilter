@@ -1,0 +1,198 @@
+[
+  {
+  "area": "Southern Interior",
+  "campground": "Blanket Creek",
+  "subcampground": "Campground",
+  "amenities": [
+    " Hiking ",
+    " Biking ",
+    " Information ",
+    " Park Office ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Firewood ",
+    " Recycling ",
+    " Grey Water Disposal ",
+    " Water Tap ",
+    " Food Locker "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Bromley Rock ",
+  "subcampground": "null",
+  "amenities": [
+    " Day Use Area ",
+    " Fishing ",
+    " Restroom ",
+    " Information ",
+    " Garbage ",
+    " Water Tap ",
+    " Parking ",
+    " Beach "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Champion Lakes ",
+  "subcampground": "Campground",
+  "amenities": [
+    " Hiking ",
+    " Information ",
+    " Amphitheatre ",
+    " Restroom ",
+    " Water Tap "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Dry Gulch ",
+  "subcampground": "Campground",
+  "amenities": [ " Information ", " Entrance Kiosk ", " Restroom " ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " E.C. Manning ",
+  "subcampground": "Lightning Lake",
+  "amenities": [
+    " Parking ",
+    " Hiking ",
+    " Day Use Area ",
+    " Amphitheatre ",
+    " Camping ",
+    " Entrance Kiosk ",
+    " Information ",
+    " Firewood ",
+    " Water Tap "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Ellison ",
+  "subcampground": "Campground",
+  "amenities": [
+    " Hiking ",
+    " Self Guided Nature Trail ",
+    " Swimming ",
+    " Amphitheatre ",
+    " Playground ",
+    " Day Use Area ",
+    " Information ",
+    " Pay Phone ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Water Tap "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Gladstone ",
+  "subcampground": "null",
+  "amenities": [
+    " Parking ",
+    " Information ",
+    " Hiking ",
+    " Boat Launch ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Beach ",
+    " Swimming ",
+    " Fishing ",
+    " Canoeing ",
+    " Water Tap ",
+    " Playground "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " sw̓iw̓s (Haynes Point) ",
+  "subcampground": "null",
+  "amenities": [
+    " Camping ",
+    " Restroom ",
+    " Information ",
+    " Day Use Area ",
+    " Parking ",
+    " Change House ",
+    " Boat Launch ",
+    " Canoeing ",
+    " Fishing ",
+    " Swimming ",
+    " Water Tap "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Herald ",
+  "subcampground": "Campgrounds",
+  "amenities": [
+    " Parking ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Dump Station "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Fintry ",
+  "subcampground": " A (Sites 1-50) ",
+  "amenities:": [
+    " Swimming ",
+    " Beach ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Parking ",
+    " Playground ",
+    " Day Use Area ",
+    " Amphitheatre ",
+    " Water Tap ",
+    " No Dogs ",
+    " Accessible "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Fintry ",
+  "subcampground": " B (Sites 51-82) ",
+  "amenities:": [
+    " Day Use Area ",
+    " Fishing ",
+    " Restroom ",
+    " Information ",
+    " Garbage ",
+    " Water Tap ",
+    " Parking ",
+    " Beach "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Fintry ",
+  "subcampground": " C (Sites 83-110) ",
+  "amenities:": [
+    " Hiking ",
+    " Parking ",
+    " Lookout ",
+    " Camping ",
+    " Playground ",
+    " Information ",
+    " Dump Station ",
+    " Day Use Area ",
+    " Change House ",
+    " Restroom "
+  ]
+},
+{
+  "area": "Southern Interior",
+  "campground": " Juniper Beach ",
+  "subcampground": "Sites 1-16, 22-32",
+  "amenities": [
+    " Parking ",
+    " Boat Launch ",
+    " Restroom ",
+    " Restroom with Showers ",
+    " Dump Station ",
+    " Information "
+  ]
+}
+]

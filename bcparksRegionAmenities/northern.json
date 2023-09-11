@@ -1,0 +1,172 @@
+[
+  {
+    "area": "Northern",
+    "campground": "Tā Ch’ilā (Boya Lake)",
+    "subcampground": "Campground",
+    "amenities": [
+      " Dump Station ",
+      " Parking ",
+      " Garbage ",
+      " Restroom ",
+      " Information ",
+      " Playground ",
+      " Day Use Area ",
+      " Picnic Shelter ",
+      " Boat Launch ",
+      " Accessible ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Carp Lake ",
+    "subcampground": " SS2 ",
+    "amenities": [
+      " Fishing ",      " Canoeing ",
+      " Swimming ",     " Beach ",
+      " Boat Launch ",  " Lookout ",
+      " Lookout ",      " Camping ",
+      " Parking ",      " Restroom ",
+      " Day Use Area ", " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Crooked River ",
+    "subcampground": "null",
+    "amenities": [
+      " Information ",
+      " Park Office ",
+      " Parking ",
+      " Restroom ",
+      " Playground ",
+      " Hiking ",
+      " Picnic Shelter ",
+      " Beach ",
+      " Day Use Area ",
+      " Camping ",
+      " Change House ",
+      " Canoeing ",
+      " Dump Station ",
+      " Restroom with Showers ",
+      " Accessible ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Kleanza Creek ",
+    "subcampground": "null",
+    "amenities": [
+      " Parking ",
+      " Horseshoes ",
+      " Information ",
+      " Garbage ",
+      " Day Use Area ",
+      " Restroom ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Liard River Hot Springs ",
+    "subcampground": "null",
+    "amenities": [
+      " Camping ",      " Lookout ",
+      " Parking ",      " Change House ",
+      " Restroom ",     " Information ",
+      " Playground ",   " Marsh ",
+      " Day Use Area ", " Picnic Shelter ",
+      " Garbage ",      " Accessible ",
+      " No Dogs ",      " No Bicycling ",
+      " Water Tap ",    " Food Locker ",
+      " Gate "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Meziadin Lake ",
+    "subcampground": "Sites 25-66",
+    "amenities": [
+      " Boat Launch ",
+      " Restroom ",
+      " Picnic Shelter ",
+      " Garbage ",
+      " Information ",
+      " Store ",
+      " Water Tap ",
+      " Accessible "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Mount Robson ",
+    "subcampground": " Lucerne Campground ",
+    "amenities": [
+      " Information ",
+      " Park Office ",
+      " Parking ",
+      " Restroom ",
+      " Playground ",
+      " Hiking ",
+      " Picnic Shelter ",
+      " Beach ",
+      " Day Use Area ",
+      " Camping ",
+      " Change House ",
+      " Canoeing ",
+      " Dump Station ",
+      " Restroom with Showers ",
+      " Accessible ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Paarens Beach ",
+    "subcampground": "null",
+    "amenities": [
+      " Fishing ",
+      " Boat Launch ",
+      " Swimming ",
+      " Parking ",
+      " Information ",
+      " Firewood ",
+      " Day Use Area ",
+      " Picnic Shelter ",
+      " Restroom ",
+      " Change House ",
+      " Playground ",
+      " Water Tap ",
+      " Accessible "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Purden Lake ",
+    "subcampground": "Campground",
+    "amenities": [
+      " Parking ",
+      " Boat Launch ",
+      " Dump Station ",
+      " Restroom ",
+      " Firewood ",
+      " Playground ",
+      " Information ",
+      " Water Tap "
+    ]
+  },
+  {
+    "area": "Northern",
+    "campground": " Red Bluff ",
+    "subcampground": "null",
+    "amenities": [
+      " Fishing ",      " Canoeing ",
+      " Swimming ",     " Beach ",
+      " Boat Launch ",  " Lookout ",
+      " Lookout ",      " Camping ",
+      " Parking ",      " Restroom ",
+      " Day Use Area ", " Water Tap "
+    ]
+  }
+]

@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
 //middleware so can access images and css 
 app.use(express.static('public'));
 
+var allParksFile = require('../bcparksRegionAmenities/allparks.json')
+
+app.get('/api/users', (req, res) => {
+  res.json(allParksFile)
+})
+
 app.listen(5000, () => {
   console.log('Server is listening on port 5000')
 })

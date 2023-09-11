@@ -1,0 +1,57 @@
+[
+  {
+  "area": "Coastal Mainland",
+  "campground": "Alice Lake",
+  "subcampground": " Walk-In ",
+  "amenities": [
+    " Swimming ",     " Parking ",
+    " Hiking ",       " Boat Launch ",
+    " Day Use Area ", " Beach ",
+    " Dog Beach ",    " Information ",
+    " Dump Station ", " Restroom ",
+    " No Dogs ",      " No Fishing ",
+    " Water Tap "
+  ]
+},
+{
+  "area": "Coastal Mainland",
+  "campground": "Alice Lake",
+  "subcampground": "A (Sites 1-55)",
+  "amenities": [
+  " Group Camping ",
+  " Entrance Kiosk ",
+  " Swimming ",
+  " Parking ",
+  " Change House ",
+  " Walk-in Camping ",
+  " Playground ",
+  " Hiking ",
+  " Information ",
+  " Dump Station ",
+  " Day Use Area ",
+  " Restroom ",
+  " Restroom with Showers ",
+  " Amphitheatre ",
+  " No Dogs "
+  ]
+},
+{
+  "area": "Coastal Mainland",
+  "campground": "Alice Lake",
+  "subcampground": "B (Sites 56-96)",
+  "amenities": [
+  " Parking ",
+  " Hiking ",
+  " Entrance Kiosk ",
+  " Information ",
+  " Restroom ",
+  " Restroom with Showers ",
+  " Swimming ",
+  " Playground ",
+  " Camping ",
+  " Walk-in Camping ",
+  " No Dogs ",
+  " No Cars "
+  ]
+}
+]
