@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 })
 
 //middleware so can access images and css 
+// app.use(express.static('public')); //LOCAL USE
 app.use(express.static(__dirname + "/public/"));
 
 
