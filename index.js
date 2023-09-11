@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import allParksFile from './bcparksRegionAmenities/allparks.json';
+import allParksFile from './public/data/allparks.json';
 
 // console.log(allParksFile)
 const app = express()
