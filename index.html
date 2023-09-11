@@ -37,29 +37,31 @@
 <body id="body" style="background-color: #f6f6f6">
   <header>
     <nav>
-      <div class="navbar">
-        <a class="navbar-brand" href="#">
-          <img src="/images/bcparkslogo.png" id="navLogo">
-        </a>
-        <div>
-          <!--full screen nav-->
-          <a href="" id="signIn" class="fullscreenNav hover-underline-animation">
-            <span class="material-symbols-outlined">account_circle</span>
-            Sign In
+      <div id="navbarFullScreen">
+        <div class="navbar">
+          <a class="navbar-brand" href="#">
+            <img src="/images/bcparkslogo.png" id="navLogo">
           </a>
-          <a href="" id="systemTime" class="fullscreenNav hover-underline-animation">
-            <span class="material-symbols-outlined">schedule</span>System Time
-          </a>
-          <!-- mobile nav -->
-          <a href="" id="time" class="mobileNav">
-            <span class="material-symbols-outlined">schedule</span> Time
-          </a>
-
-          <span class="material-symbols-outlined">shopping_cart</span>
-          <a href="" class="fullscreenNav hover-underline-animation">
-            Cart
-          </a>
-          <span class="material-symbols-outlined open-button" id="hamburgerMenu">menu</span>
+          <div>
+            <!--full screen nav-->
+            <a href="" id="signIn" class="fullscreenNav hover-underline-animation">
+              <span class="material-symbols-outlined">account_circle</span>
+              Sign In
+            </a>
+            <a href="" id="systemTime" class="fullscreenNav hover-underline-animation">
+              <span class="material-symbols-outlined">schedule</span>System Time
+            </a>
+            <!-- mobile nav -->
+            <a href="" id="time" class="mobileNav">
+              <span class="material-symbols-outlined">schedule</span> Time
+            </a>
+  
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <a href="" class="fullscreenNav hover-underline-animation">
+              Cart
+            </a>
+            <span class="material-symbols-outlined open-button" id="hamburgerMenu">menu</span>
+          </div>
         </div>
       </div>
 
@@ -97,7 +99,7 @@
       <div class="reservations">
         <a href="#" class="fullscreenNav">
           &nbsp; <span class="material-symbols-outlined ">camping</span>
-          Reservations HOI &nbsp;
+          Reservations &nbsp;
         </a>
       </div>
     </div>
@@ -250,8 +252,12 @@
           </div>
           <div class="moreInfoText" id="moreInfo3">
             <span class="material-symbols-outlined moreInfoTextChildL">chat</span>
-            <p class="moreInfoTextChildR"> Contact us</p>
+            <p class="moreInfoTextChildR">Contact us</p>
           </div>
+          <!-- <div class="moreInfoText" id="moreInfo3">
+            <span class="material-symbols-outlined moreInfoTextChildL">chat</span>
+            <p class="moreInfoTextChildR"> Contact us</p>
+          </div> -->
         </div>
       </div>
   </div> <!--center-->
@@ -302,6 +308,7 @@
     }
   }
 
+
   //tab section
   function leftScroll() {
     const left = document.querySelector(".scrollTabs");
@@ -312,24 +319,6 @@
     const right = document.querySelector(".scrollTabs");
     right.scrollBy(200, 0);
   }
-
-  //tab section
-  // function openCity(evt, cityName) {
-  //   var i, tabcontent, tablinks;
-  //   tabcontent = document.getElementsByClassName("tabContent");
-  //   for (i = 0; i < tabcontent.length; i++) {
-  //     tabcontent[i].style.display = "none";
-  //   }
-  //   tablinks = document.getElementsByClassName("tablinks");
-  //   for (i = 0; i < tablinks.length; i++) {
-  //     tablinks[i].className = tablinks[i].className.replace(" active", "");
-  //   }
-  //   document.getElementById(cityName).style.display = "block";
-  //   evt.currentTarget.className += " active";
-  // }
-
-  // Get the element with id="defaultOpen" and click on it
-  // document.getElementById("defaultOpen").click();
 
   //clears all the selected amenities for a new search
   function clearAll() {

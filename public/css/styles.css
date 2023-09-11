@@ -662,6 +662,7 @@ div .chosen-container{
   .moreInfoText p{
     padding: 0px;
     margin: auto;
+    
   }
 
   .moreInfoText{
@@ -676,6 +677,7 @@ div .chosen-container{
     width: 85%; 
     flex-wrap: wrap;
   }
+
   #moreInfo1, #moreInfo2{
     margin-right: 2%;
   }
@@ -684,7 +686,6 @@ div .chosen-container{
 /**full nav bar*/
 @media screen and (min-width: 960px) and (max-width: 1279px) {
   main{
-    /* margin: 0px 154px; */
     padding-top: 60px;
   }
   .centerAll{
@@ -704,7 +705,6 @@ div .chosen-container{
   #reservationsFullScreen{
     background-color:rgb(36,100,164);
     padding: 10px 0px;
-    /* width: 100%; */
   }
 
   .reservations{
@@ -723,11 +723,6 @@ div .chosen-container{
     color:white;
     text-decoration: none;
   }
-
-  /* .fullscreenNav .material-symbols-outlined{
-    color:white;
-    font-size: 19px;
-  } */
 
   .scrollTabs div{
     display: flex;
@@ -772,36 +767,46 @@ div .chosen-container{
     width: 100%;
   }
 
+  .sectionContainer #moreInfo1, .sectionContainer #moreInfo2, .sectionContainer #moreInfo3{
+    width: 35%
+  }
+
   .moreInfoText{
-    padding: 10px 16px;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    vertical-align: middle;
-    border-radius: 5px ;
   }
 
   .moreInfoText p {
-    margin-left: 7px;
-    font-size: 20px;
-  }
-
-  .sectionContainer .moreInfoText{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    font-size: 22px;
+    margin: auto;
+    text-align: left;
   }
 
   #moreInfo1, #moreInfo2{
     margin-right: 2%;
   }
 
-  #moreInfo2{
-    flex-wrap: wrap;
+  .moreInfoTextChildL{
+    margin: auto;
+  }
+  #moreInfo3{
+    display: flex;
+    flex-direction: row;
   }
 
-  .moreInfoTextChildL{
-    margin-top: 7px;
+  #moreInfo3 span{
+    width: 10%
   }
+
+  #moreInfo3 p{
+    width: 90%;
+  }
+
+  .moreInfoText span{
+    margin-right: 10px;
+  }
+  
 }
 
 /** nav has padding and also theres the bg picture*/
@@ -812,9 +817,31 @@ div .chosen-container{
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    
+  }
+
+  div#navbarFullScreen{
+    display: flex;
+    justify-content: center;
+  }
+  .navbar{
+    width: 1220px;
+    max-width: 1220px;
   }
   
+  div#reservationsFullScreen{
+    display: flex;
+    justify-content: center;
+  }
+  .reservations{
+    width: 1220px;
+    max-width: 1220px;
+  }
+  
+  nav.bottomNav{
+    display: flex;
+    justify-content: center;
+  }
+
   .centerAll{
     display: flex;
     flex-direction: column;
@@ -822,12 +849,6 @@ div .chosen-container{
     background-color: transparent;
     border-radius: 5px 5px 0px 0px;
     margin-top: 350px;
-    
-  }
-
-
-  #main{
-    background-color: transparent;
   }
 
   .searchSection{
@@ -839,8 +860,7 @@ div .chosen-container{
     max-width: 1220px;
     margin: auto;
     padding: 0px 0px 100px;
-    /* width: 75%; */
-    /* background-color: orange; */
+    background-color: transparent;
   }
   #navLogo{
     width: 229px;
@@ -855,36 +875,7 @@ div .chosen-container{
   #reservationsFullScreen{
     background-color:rgb(36,100,164);
     padding: 7px 30px;
-    /* width: 100%; */
   }
-  /* .reservations{
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration-thickness: 2px;
-    text-decoration-color: white;
-  } */
-
-  /* .reservations a{
-    color: white;
-    cursor: pointer;
-  }
-
-  .reservations a span{
-    margin-bottom: 12px;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: white;
-  }
-
-  
-  .reservations a:hover {
-    background-color: rgba(255, 255, 255, 0.1);;
-    text-decoration: none;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
-  } */
-  
 
   .scrollTabs div{
     display: flex;
@@ -955,7 +946,7 @@ div .chosen-container{
   }
 
   .moreInfoText p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .sectionContainer .moreInfoText{
@@ -984,26 +975,5 @@ div .chosen-container{
   .moreInfoTextChildL{
     margin-top: 8px;
   }
-/* 
-  #bannerSection{
-    position: absolute;
-    z-index: -1;
-  }   */
-
-
-  /* div .chosen-container{
-    color: pink;
-    width: 200px;
-    border: 4px solid orange;
-  } */
-
-  /* input[type="text"]  .chosen-search-input{
-    border: 4px solid orange;
-  } */
-
-  /* #amenities_chosen{
-    width: 500px;
-    border: 4px solid red
-  } */
   
 }
