@@ -97,7 +97,7 @@
       <div class="reservations">
         <a href="#" class="fullscreenNav">
           &nbsp; <span class="material-symbols-outlined ">camping</span>
-          Reservations &nbsp;
+          Reservations HOI &nbsp;
         </a>
       </div>
     </div>
@@ -150,19 +150,23 @@
             <!--Region-->
             <div class ="region">
               <label class="container">
-                <input type="checkbox" name="region" value ="Southern Interior" checked="checked">
+                <input type="checkbox" name="region" value ="all" onclick="checkAll()" >
+                <span class="checkmark"></span> All
+              </label>
+              <label class="container">
+                <input type="checkbox" name="region" value ="Southern Interior" >
                 <span class="checkmark"></span> Southern Interior
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Northern" checked="checked">
+                <input type="checkbox" name="region" value ="Northern" >
                 <span class="checkmark"></span> Northern
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Coastal Mainland" checked="checked">
+                <input type="checkbox" name="region" value ="Coastal Mainland" >
                 <span class="checkmark"></span> Coastal Mainland
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Islands" checked="checked">
+                <input type="checkbox" name="region" value ="Islands">
                 <span class="checkmark"></span> Islands
               </label>
             </div>
@@ -282,6 +286,21 @@
     return values
   }
 
+  function checkAll(){
+    //check if the 'all' box is checked off
+    var allCheckBox = document.querySelector("input[type=checkbox][name=region][value=all]").checked
+    var checkboxes = document.querySelectorAll("input[type=checkbox][name=region]");
+    if(allCheckBox){
+      //if all is currently checked, trigger rest of the checkboxes to be checked
+      for(var i=0, n=checkboxes.length;i<n;i++) {
+      checkboxes[i].checked = true;
+      }
+    }else{
+      for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = false;
+      }
+    }
+  }
 
   //tab section
   function leftScroll() {

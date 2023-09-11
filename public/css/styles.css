@@ -65,6 +65,30 @@ span.material-symbols-outlined{
   font-size: 40px;
 }
 
+.reservations a{
+  color: white;
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.reservations a span{
+  margin-bottom: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: white;
+}
+
+
+.reservations a:hover {
+  background-color: rgba(255, 255, 255, 0.1);;
+  text-decoration: none;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-decoration: none;
+}
+
+
 /** scroll tabs */
 .tab{
   padding: 0px 30px;
@@ -700,10 +724,10 @@ div .chosen-container{
     text-decoration: none;
   }
 
-  .fullscreenNav .material-symbols-outlined{
+  /* .fullscreenNav .material-symbols-outlined{
     color:white;
     font-size: 19px;
-  }
+  } */
 
   .scrollTabs div{
     display: flex;
@@ -828,22 +852,19 @@ div .chosen-container{
     visibility: hidden;
   }
 
-
   #reservationsFullScreen{
     background-color:rgb(36,100,164);
     padding: 7px 30px;
     /* width: 100%; */
   }
-  .reservations{
-    /* margin: 0px 180px;  */
+  /* .reservations{
     font-weight: bolder;
     font-size: 20px;
-    text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: white;
-  }
+  } */
 
-  .reservations a{
+  /* .reservations a{
     color: white;
     cursor: pointer;
   }
@@ -862,7 +883,7 @@ div .chosen-container{
     border-radius: 15px;
     color: white;
     text-decoration: none;
-  }
+  } */
   
 
   .scrollTabs div{
