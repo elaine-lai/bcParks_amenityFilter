@@ -1,14 +1,13 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import allParksFile from './bcparksRegionAmenities/allparks.json' assert { type: "json" };
+// import allParksFile from './bcparksRegionAmenities/allparks.json' assert { type: "json" };
 
 
 const app = express()
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log(__dirname)
 
 app.get('/', (req, res) => {
   // res.send('express vercel app response!')
