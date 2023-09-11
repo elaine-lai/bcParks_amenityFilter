@@ -1,6 +1,8 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import allParksFile from './bcparksRegionAmenities/allparks.json' assert { type: "json" };
+
 
 const app = express()
 const __filename = fileURLToPath(import.meta.url);
@@ -16,7 +18,6 @@ app.get('/', (req, res) => {
 //middleware so can access images and css 
 app.use(express.static('public'));
 
-var allParksFile = require('../bcparksRegionAmenities/allparks.json')
 
 app.get('/api/users', (req, res) => {
   res.json(allParksFile)
