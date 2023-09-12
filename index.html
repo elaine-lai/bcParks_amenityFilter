@@ -42,23 +42,23 @@
           <a class="navbar-brand" href="#">
             <img src="/images/bcparkslogo.png" id="navLogo">
           </a>
-          <div>
+
+          <div class="navbarIcons">
             <!--full screen nav-->
             <a href="" id="signIn" class="fullscreenNav hover-underline-animation">
               <span class="material-symbols-outlined">account_circle</span>
               Sign In
             </a>
             <a href="" id="systemTime" class="fullscreenNav hover-underline-animation">
-              <span class="material-symbols-outlined">schedule</span>System Time
+              <span class="material-symbols-outlined">schedule</span> System Time
             </a>
             <!-- mobile nav -->
             <a href="" id="time" class="mobileNav">
               <span class="material-symbols-outlined">schedule</span> Time
             </a>
   
-            <span class="material-symbols-outlined">shopping_cart</span>
-            <a href="" class="fullscreenNav hover-underline-animation">
-              Cart
+            <a href=""  id ="cart" class="fullscreenNav hover-underline-animation"> 
+              <span class="material-symbols-outlined">shopping_cart</span> Cart
             </a>
             <span class="material-symbols-outlined open-button" id="hamburgerMenu">menu</span>
           </div>
@@ -152,23 +152,23 @@
             <!--Region-->
             <div class ="region">
               <label class="container">
-                <input type="checkbox" name="region" value ="all" onclick="checkAll()" >
-                <span class="checkmark"></span> All
+                <input type="checkbox" name="region" value ="all" checked=true onclick="checkAll()" >
+                <span class="checkmark"></span> All/Remove All
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Southern Interior" >
+                <input type="checkbox" name="region" value ="Southern Interior" checked=true  >
                 <span class="checkmark"></span> Southern Interior
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Northern" >
+                <input type="checkbox" name="region" value ="Northern" checked=true >
                 <span class="checkmark"></span> Northern
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Coastal Mainland" >
+                <input type="checkbox" name="region" value ="Coastal Mainland" checked=true  >
                 <span class="checkmark"></span> Coastal Mainland
               </label>
               <label class="container">
-                <input type="checkbox" name="region" value ="Islands">
+                <input type="checkbox" name="region" value ="Islands" checked=true >
                 <span class="checkmark"></span> Islands
               </label>
             </div>
