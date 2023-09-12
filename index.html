@@ -403,14 +403,17 @@
 
   //get master list of all of the amenities without repeats
   function removeDuplicateAmenities(listOfAmenities) {
-    // console.log(listOfAmenities)
     var noDuplicateAmenities = new Set();
     listOfAmenities.map(function (element) {
       element.amenities.map(function (e) {
         noDuplicateAmenities.add(e.trim())
       })
     })
-    return noDuplicateAmenities
+    //convert set to array
+    let amenityList = Array.from(noDuplicateAmenities);
+    //sort everything in alphabetical order
+    amenityList.sort()
+    return amenityList
   }
 
   function populateAmenityList(listOfAmenities) {
