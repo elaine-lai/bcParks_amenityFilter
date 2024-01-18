@@ -431,6 +431,7 @@
     try {
       const response = await fetch(`/api/amenities`);
       const exam = await response.json();
+      console.log(exam)
       return exam;
     } catch (error) {
       console.error(error);
