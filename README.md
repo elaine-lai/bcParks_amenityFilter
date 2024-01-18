@@ -12,7 +12,7 @@ A conventional website developed using JavaScript, Express for server-side logic
 
 Visit the live project here: https://bcparks-filteramenity.vercel.app/
 
-## Problem to Solve
+### Problem aimed to solve
 Previously, it was necessary to navigate into each individual campsite to view its list of amenities. To streamline the booking process, a filtering system was created. For instance, one could easily obtain a list of all campsites equipped with 'Restrooms with Showers' through a simplified and efficient search.
 
 ![image](https://github.com/elaine-lai/bcParks_amenityFilter/assets/90720708/9b4bbdc3-4291-46ef-987c-15b2e5598a18)
