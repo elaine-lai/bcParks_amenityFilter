@@ -425,10 +425,11 @@
     }
   }
 
+  // gets all of the ameneities at each parks, just hardcoded in 
   async function fetchBCParksData() {
     //just like the fetch().then(res=> res.json())
     try {
-      const response = await fetch(`/api/users`);
+      const response = await fetch(`/api/amenities`);
       const exam = await response.json();
       return exam;
     } catch (error) {
@@ -462,7 +463,6 @@
 
   //shows nav bar + when clicking main, closes nav bar only in mobile
   function onlyMobileWidth() {
-    console.log("function called")
     var w = window.innerWidth
     if(w < 960){
       document.querySelector('#main').addEventListener("click", function (e) {
